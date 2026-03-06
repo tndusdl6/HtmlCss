@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      #movies {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #movies td,
+      #movies th {
+        border: 1px solid #d42f2f77;
+        padding: 8px;
+      }
+      #movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: green;
+        color: white;
+      }
+      #movies tr:nth-child(even) {
+        background-color: rgba(128, 128, 128, 0.269);
+      }
+      #movies tr:hover {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="movies">
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+      <tr>
+        <td>블랙핑크 더 무비</td>
+        <td>100분</td>
+        <td>2021.07.28 개봉</td>
+      </tr>
+      <tr>
+        <td>정글 크루즈</td>
+        <td>127분</td>
+        <td>2021.07.28 개봉</td>
+      </tr>
+    </table>
+  </body>
+</html>
