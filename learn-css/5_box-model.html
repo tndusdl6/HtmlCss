@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      div.content {
+        background-color: rgb(181, 179, 179);
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        /* width와 height 적용안됨*/
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        padding: 10px 15px 3px 7px;
+      }
+      div.margin {
+        border: 1px solid blue;
+        margin: 20px;
+      }
+      .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>인라인</span>
+    <div class="padding">
+      이런 환경에서는 아예 생활패턴을 뜯어고치지 않는 이상 결국 장기적으로 보면
+      체중은 원래대로 돌아가게 된다. 매년 새해 1월에 새 목표를 세우지만 대개
+      한달도 채 못 가는 것처럼, 몇십 년 동안 이어온 삶의 방식을 바꾼다는 것은
+      결코 쉬운 일이 아니다.
+    </div>
+    <div class="margin">
+      이런 환경에서는 아예 생활패턴을 뜯어고치지 않는 이상 결국 장기적으로 보면
+      체중은 원래대로 돌아가게 된다. 매년 새해 1월에 새 목표를 세우지만 대개
+      한달도 채 못 가는 것처럼, 몇십 년 동안 이어온 삶의 방식을 바꾼다는 것은
+      결코 쉬운 일이 아니다.
+    </div>
+    <div class="shape" style="margin-bottom: 40px"></div>
+    <div class="shape"></div>
+  </body>
+</html>
