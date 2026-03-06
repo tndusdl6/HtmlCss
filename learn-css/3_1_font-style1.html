@@ -6,6 +6,10 @@
     <title>Font Style 1</title>
     <style>
       @import url('http://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
       html {
         /*font-family: serif, monospace;*/
         font-family: 'Nanum Gothic', sans-serif;
@@ -25,6 +29,28 @@
       .font-variant {
         font-variant: small-caps;
       }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .article {
+        font-size: 10px;
+      }
+      .rectangle.width {
+        width: 100vw;
+        height: 100px;
+        background-color: aquamarine;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: darkorange;
+      }
     </style>
   </head>
   <body>
@@ -40,5 +66,19 @@
       실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.
     </p>
     <p class="content font-variant">HELLO, gymcoding</p>
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <h2>em</h2>
+    <div class="article">
+      <p class="subtitle-em">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    </div>
+    <hr />
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
   </body>
 </html>
